@@ -46,6 +46,8 @@
 		3A0A08B1298AA4E700D57655 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3A0A08B0298AA4E700D57655 /* FirebaseRemoteConfigSwift */; };
 		3A0A08B3298AA4E700D57655 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3A0A08B2298AA4E700D57655 /* FirebaseStorage */; };
 		3A0A08B5298AA4E700D57655 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 3A0A08B4298AA4E700D57655 /* FirebaseStorageCombine-Community */; };
+		3A0A08B8298BBD3600D57655 /* CalendarKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3A0A08B7298BBD3600D57655 /* CalendarKit */; };
+		3A0A08BA298BE6AD00D57655 /* ListTrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0A08B9298BE6AD00D57655 /* ListTrainingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,7 @@
 		3A0A0879298A685400D57655 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		3A0A087B298A686800D57655 /* TrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingView.swift; sourceTree = "<group>"; };
 		3A0A087D298AA3AD00D57655 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3A0A08B9298BE6AD00D57655 /* ListTrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTrainingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,7 @@
 				3A0A088B298AA4E700D57655 /* FirebaseAppDistribution-Beta in Frameworks */,
 				3A0A088F298AA4E700D57655 /* FirebaseAuthCombine-Community in Frameworks */,
 				3A0A08AD298AA4E700D57655 /* FirebasePerformance in Frameworks */,
+				3A0A08B8298BBD3600D57655 /* CalendarKit in Frameworks */,
 				3A0A08A5298AA4E700D57655 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
 				3A0A08B3298AA4E700D57655 /* FirebaseStorage in Frameworks */,
 				3A0A0897298AA4E700D57655 /* FirebaseDynamicLinks in Frameworks */,
@@ -164,6 +168,7 @@
 				3A0A08772989585C00D57655 /* FooterView.swift */,
 				3A0A0879298A685400D57655 /* ProfileView.swift */,
 				3A0A087B298A686800D57655 /* TrainingView.swift */,
+				3A0A08B9298BE6AD00D57655 /* ListTrainingView.swift */,
 				3A0A084F29894D8F00D57655 /* Assets.xcassets */,
 				3A0A087D298AA3AD00D57655 /* GoogleService-Info.plist */,
 				3A0A085129894D8F00D57655 /* Preview Content */,
@@ -240,6 +245,7 @@
 				3A0A08B0298AA4E700D57655 /* FirebaseRemoteConfigSwift */,
 				3A0A08B2298AA4E700D57655 /* FirebaseStorage */,
 				3A0A08B4298AA4E700D57655 /* FirebaseStorageCombine-Community */,
+				3A0A08B7298BBD3600D57655 /* CalendarKit */,
 			);
 			productName = "Jitsu-Tracker";
 			productReference = 3A0A084829894D8C00D57655 /* Jitsu-Tracker.app */;
@@ -315,6 +321,7 @@
 			mainGroup = 3A0A083F29894D8C00D57655;
 			packageReferences = (
 				3A0A087F298AA4E700D57655 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				3A0A08B6298BBD3600D57655 /* XCRemoteSwiftPackageReference "CalendarKit" */,
 			);
 			productRefGroup = 3A0A084929894D8C00D57655 /* Products */;
 			projectDirPath = "";
@@ -363,6 +370,7 @@
 				3A0A08782989585C00D57655 /* FooterView.swift in Sources */,
 				3A0A087A298A685400D57655 /* ProfileView.swift in Sources */,
 				3A0A087629894FBD00D57655 /* HeaderView.swift in Sources */,
+				3A0A08BA298BE6AD00D57655 /* ListTrainingView.swift in Sources */,
 				3A0A087C298A686800D57655 /* TrainingView.swift in Sources */,
 				3A0A084C29894D8C00D57655 /* Jitsu_TrackerApp.swift in Sources */,
 			);
@@ -693,6 +701,14 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		3A0A08B6298BBD3600D57655 /* XCRemoteSwiftPackageReference "CalendarKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/richardtop/CalendarKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -830,6 +846,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3A0A087F298AA4E700D57655 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageCombine-Community";
+		};
+		3A0A08B7298BBD3600D57655 /* CalendarKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A0A08B6298BBD3600D57655 /* XCRemoteSwiftPackageReference "CalendarKit" */;
+			productName = CalendarKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

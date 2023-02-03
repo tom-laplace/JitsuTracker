@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var showTraining = false
 
     var body: some View {
         VStack{

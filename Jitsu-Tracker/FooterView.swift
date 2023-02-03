@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct FooterView: View {
-    @State private var showTraining = false
+    @State private var showListTraining = false
     @State private var showProfile = false
 
     var body: some View {
@@ -23,11 +23,11 @@ struct FooterView: View {
                             .font(.system(size: 60))
                             .offset(x: -40)
                             .onTapGesture {
-                                self.showTraining.toggle()
+                                self.showListTraining.toggle()
                             }
                         Text("Entraînement")
                             .foregroundColor(Color.white)
-                            .offset(x: -30, y: 8)
+                            .offset(x: -50, y: 8)
                     }
                     VStack {
                         Image(systemName: "figure.wave")
@@ -39,13 +39,13 @@ struct FooterView: View {
                             }
                         Text("Profil")
                             .foregroundColor(Color.white)
-                            .offset(x: 37)
+                            .offset(x: 43)
                     }
                 }
             }
             .frame(height: 40)
-            .sheet(isPresented: $showTraining) {
-                TrainingView(showTraining: $showTraining)
+            .sheet(isPresented: $showListTraining) {
+                ListTrainingView(showListTraining: $showListTraining)
             }
             .sheet(isPresented: $showProfile) {
                 ProfileView(showProfile: $showProfile)

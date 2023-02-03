@@ -13,8 +13,8 @@ struct ProfileView: View {
     @State private var selectedBeltColor = "Blanche"
     @State private var beltColors = ["Blanche", "Bleu", "Violette", "Marron", "Noir"]
     @Binding var showProfile : Bool
-
-
+    
+    
     var body: some View {
         
         VStack(spacing: 20) {
@@ -56,7 +56,8 @@ struct ProfileView: View {
             .padding(.bottom, 15)
             
             Button(action: {
-                // enregistre l'utilisateur dans la BDD
+                self.saveUserData()
+                self.showProfile.toggle()
             })
             { Text("Enregistrer")
                     .foregroundColor(.white)
@@ -66,6 +67,21 @@ struct ProfileView: View {
             }
         }
         .padding()
+        .onAppear(){
+            self.loadData()
+        }
+    }
+    
+    func saveUserData() {
+        UserDefaults.standard.set(username, forKey: "username")
+        UserDefaults.standard.set(email, forKey: "email")
+        UserDefaults.standard.set(selectedBeltColor, forKey: "beltColor")
+    }
+    
+    func loadData(){
+        username = UserDefaults.standard.string(forKey: "username") ?? ""
+        email = UserDefaults.standard.string(forKey: "email") ?? ""
+        selectedBeltColor = UserDefaults.standard.string(forKey: "beltColor") ?? "blanche"
     }
 }
 
