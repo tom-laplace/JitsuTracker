@@ -84,6 +84,7 @@
 		3A0A087B298A686800D57655 /* TrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingView.swift; sourceTree = "<group>"; };
 		3A0A087D298AA3AD00D57655 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3A0A08B9298BE6AD00D57655 /* ListTrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTrainingView.swift; sourceTree = "<group>"; };
+		3A0A08BC298D448B00D57655 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +143,7 @@
 		3A0A083F29894D8C00D57655 = {
 			isa = PBXGroup;
 			children = (
+				3A0A08BC298D448B00D57655 /* README.md */,
 				3A0A084A29894D8C00D57655 /* Jitsu-Tracker */,
 				3A0A085B29894D8F00D57655 /* Jitsu-TrackerTests */,
 				3A0A086529894D8F00D57655 /* Jitsu-TrackerUITests */,
